@@ -1,0 +1,170 @@
+html{
+  scroll-behavior:smooth;
+}
+h1 {color: red;}
+
+body {
+  background-color: white;
+}
+.navbar{
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  background: #FFCCFF;
+  border-top: 3px solid white;
+}
+.navbar-brand img{
+  width:94px !important;
+}
+.navbar-text {
+  width:100%;
+  text-align: center;
+}
+
+.navbar-collapse {
+  justify-content: center;
+}
+.nav-item {
+  font-weight: bold;
+  padding: 0 35px;
+}
+
+}
+.navbar-light .navbar-nav .nav-link {
+  color: pink;
+}
+.text-center{
+  align-items: center;
+}
+.navbar-light .navbar-nav .active>.nav-link {
+  color: #E30378;
+}
+.container-fluid{
+  display: block;
+}
+.top-gallery {
+  display: flex;
+  padding: 0;
+  justify-content:space-between;
+  border: 4px white solid;
+}
+.row-1-col-1{
+  width:27%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.row-1-col-1 img{
+  width:100%;
+  max-height: 100%;
+}
+.row-1-col-2{
+  width:73%;
+}
+.row-1-col-2 img{
+  width:100%;
+  height: 100%;
+}
+
+.row-1-col-3{
+  width:22%;
+  position: relative;
+}
+.row-1-col-3 img{
+  width:100%;
+  height: 100%;
+}
+
+.locations{
+  padding:0 0;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+.location{
+  padding:5px 0;
+}
+.location-image{
+  width:98%;
+  margin:auto;
+}
+.location img{
+  width:100%;
+  transition: all .2s ease-in-out;
+}
+
+.location img:hover{
+  opacity:.5;
+}
+
+.join-us {
+  background-color: #E30378;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 6%;
+}
+.join-us-col {
+  display: inline-block;
+  padding:10px;
+  height: 100%;
+}
+.join-us-image {
+  width: 40%;
+}
+.join-us-image img {
+  max-height: 100%;
+  max-width: 100%;
+  padding: 5px;
+}
+.join-us-text {
+  width: 60%;
+  text-align: center;
+}
+.join-headline {
+  width: 50%;
+  margin: auto;
+}
+.join-us-text h1{
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+.join-button {
+  align-items: center;
+  margin: 25px 5px;
+  color: #E30378;
+  background-color: white;
+  border: none;
+}
+.join-button:hover{
+  color:white;
+  background-color: pink;
+}
+@media screen and (max-width: 800px) {
+/*  .column {
+    flex: 100%;
+  }*/
+  .location{
+    width:50%;
+  }
+  .join-us {
+    text-align: center;
+    display: inline-block;
+  }
+  .join-us-image{
+    width:100%;
+  }
+  .join-us-text{
+    width:100%;
+  }
+}
+
+
+
+
+
+/*.navbar-light .navbar-nav .nav-link*/
