@@ -29,9 +29,8 @@ body {
   padding: 0 35px;
 }
 
-}
 .navbar-light .navbar-nav .nav-link {
-  color: pink;
+  color: white;
 }
 .text-center{
   align-items: center;
@@ -41,48 +40,74 @@ body {
 }
 .container-fluid{
   display: block;
+  padding:0 0;
 }
 .top-gallery {
-  display: flex;
-  padding: 0;
-  justify-content:space-between;
-  border: 4px white solid;
+  height: 100vh;
 }
-.row-1-col-1{
-  width:27%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-.row-1-col-1 img{
-  width:100%;
-  max-height: 100%;
-}
-.row-1-col-2{
-  width:73%;
-}
-.row-1-col-2 img{
+.cover{
   width:100%;
   height: 100%;
+  background-color:#FFCCFF;
+  position: relative;
+}
+.promotions{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.promotions img{
+  width:50%;
+  max-height: 100%;
+  border: solid white 4px;
+  border-bottom: 0;
+}
+.promotions:nth-of-type(1){
+  border-top:0;
+}
+.background-cover{
+  width:100%;
+  height:100%;
+  background:url(../images-occassions/valentine2.jpg); 
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size: cover;
+  opacity: .2;
+}
+.cover img{
+  width:100%;
 }
 
-.row-1-col-3{
-  width:22%;
-  position: relative;
+.logo{
+  position: absolute;
+  top: 41%;
+  left: 52%;
+  transform: translate(-50%,-50%);
 }
-.row-1-col-3 img{
-  width:100%;
-  height: 100%;
+
+.locations-headline{
+  text-align: center;
+  font-family: Comicsansms;
+  background: pink;
+  background-color: #FFCCFF;
+  padding: 10px 10px;
+  border-top: white solid 4px;
+  color: white;
+  }
+.locations-headline h1 {
+  color: white;
 }
 
 .locations{
   padding:0 0;
   display: flex;
   flex-wrap:wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 .location{
   padding:5px 0;
+  border: 1px solid pink;
 }
 .location-image{
   width:98%;
@@ -93,12 +118,16 @@ body {
   transition: all .2s ease-in-out;
 }
 
-.location img:hover{
+/*.location img:hover{
   opacity:.5;
+}*/
+
+.raleighhills img:hover {
+  background-image: url("..images-locations/raleighhillshover.jpg");
 }
 
 .join-us {
-  background-color: #E30378;
+  background-color: #FFCCFF;
   height: auto;
   margin: 0 auto;
   padding: 10px;
@@ -122,13 +151,14 @@ body {
 }
 .join-us-text {
   width: 60%;
+  height: 50%;
   text-align: center;
 }
 .join-headline {
   width: 50%;
   margin: auto;
 }
-.join-us-text h1{
+.join-us-text p{
   margin: 0 auto;
   text-align: center;
   color: white;
@@ -136,31 +166,46 @@ body {
 .join-button {
   align-items: center;
   margin: 25px 5px;
-  color: #E30378;
   background-color: white;
   border: none;
 }
+.join-button a {
+  color: #FFCCFF;
+  text-decoration: none;
+}
 .join-button:hover{
   color:white;
-  background-color: pink;
+  background-color: #FFCCFF;
 }
-@media screen and (max-width: 800px) {
+.join-button:hover a {
+  color: white;
+}
+.card{
+  background-color:#FFCCFF;
+  color:white;
+  margin: auto;
+  border-radius: 25px;
+  margin: 5px 5px;
+  text-align: center;
+}
+
+@media screen and (max-width: 850px) {
 /*  .column {
     flex: 100%;
   }*/
   .location{
     width:50%;
   }
+  .card-columns {
+    column-count: 1;
+    display:block;
+    width: 100%;
+  }
   .join-us {
     text-align: center;
-    display: inline-block;
+    width: 100%
   }
-  .join-us-image{
-    width:100%;
-  }
-  .join-us-text{
-    width:100%;
-  }
+
 }
 
 
